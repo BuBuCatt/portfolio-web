@@ -1,0 +1,250 @@
+/* Basic reset for styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Style for the header */
+
+  /* header section background containter design */
+  .header {
+    background-color: rgb(252, 252, 252); 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+    
+  }
+  
+  /* Logo text styling */
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(84, 84, 84); 
+  }
+
+  /* logo img */
+  .logo img{
+    height: 70px;
+    width: auto;
+  }
+
+
+  /* nav container */
+  nav{
+    min-height: 70px;
+    width: min-content;
+    display: flex;
+    align-items: center;
+  }
+
+  
+  /* Navigation menu */
+  .nav-menu {
+    list-style: none;
+    display: flex;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    
+  }
+  
+  /* Style for each navigation item */
+  .nav-item {
+    padding: 0 15px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Style for navigation links */
+  .nav-link {
+    text-decoration: none;
+    color: rgb(84, 84, 84); 
+    font-size: 18px;
+    transition: color 0.3s ease;
+  }
+  
+  /* Hover effect for links */
+  .nav-link:hover {
+    color: #FFBE98; 
+    
+  }
+
+
+
+
+/* Styles for the main content */
+main {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    min-height: 100vh; /* Full height of the viewport */
+  }
+
+
+  aside {
+    margin-right: auto; /* Pushes the aside to the left of the centered content */
+    width: fit-content; /* Set the width of the aside */
+    margin-left: 10%;
+    font-family: Arial,  sans-serif;
+    padding: 20px;
+    color:rgb(84, 84, 84) ;
+    text-align: left;
+    margin: auto;
+    
+  }
+
+  .greeting{
+   margin-bottom: 15px;
+   margin-top: 15px;
+  }
+
+
+  .greeting span {
+    background-color:rgb(84, 84, 84);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 18px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    
+  }
+
+
+  aside h1 {
+    font-size: 48px; /* Large text for 'Hello, I'm Justin' */
+    margin-bottom: 0.3em; /* Spacing between 'Hello, I'm Justin' and 'UI/UX Designer' */
+  }
+  
+  aside p {
+    font-size: 24px; /* Smaller text for 'UI/UX Designer' */
+    margin-bottom: 20px;
+    font-weight: bold; /* If you want the 'UI/UX Designer' text to be bold */
+  }
+
+
+
+
+  /* button CSS */
+
+  .btn {
+    display: inline-block;
+    background-color: rgb(84, 84, 84); /* Black background */
+    color: #fff; /* White text */
+    border: none; /* No border */
+    padding: 12px 24px; /* Top and bottom padding 10px, left and right padding 20px */
+    margin-right: 10px; /* Space between buttons */
+    font-size: 1em; /* Adjust size as needed */
+    font-weight: bold; /* Bold font */
+    border-radius: 15px; /* Rounded corners */
+    cursor: pointer; /* Cursor indicates a clickable element */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Shadow effect */
+  }
+  
+  .btn:hover {
+    background-color: #FFBE98; /* Darker background on hover */
+  }
+  
+
+  .button-container {
+    display: flex;
+    margin-left: -10px;
+    align-items: flex-start; /* Aligns items to the start of the container, i.e., left side */
+    /* Other styles */
+  }
+
+
+  /* content containter */
+
+  .content-wrapper {
+    display: flex;
+    justify-content: space-between; /* Distributes space between the elements */
+    align-items: center; /* Aligns items vertically */
+    gap: 50px;
+    
+  }
+
+
+
+.profile-container {
+    flex: 1; /* Allows the container to grow as needed */
+    display: flex;
+    justify-content: flex-end;
+
+    padding-right: 30px; /* Adds some padding to the right */
+    
+}
+
+.profile-pic {
+    width: 80%;
+    border: 3px solid rgb(84, 84, 84); 
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 15px; /* Rounded corners for the image */
+    max-width: 80%; /* Ensures image is responsive and doesn't overflow */
+    height: auto; /* Maintains aspect ratio */
+}
+
+/* Update media query if needed */
+@media screen and (max-width: 750px) {
+    .content-wrapper {
+      flex-direction: column; /* Stack the aside and image on smaller screens */
+    }
+  
+    aside, .profile-container {
+      flex-basis: auto; /* Reset the flex-basis for mobile */
+      max-width: 100%; /* On smaller screens, each part takes full width */
+    }
+  
+    /* Adjust the profile picture size for smaller screens if necessary */
+    .profile-pic {
+      width: 75%; /* For example, make the image slightly smaller on mobile */
+      margin: 0 auto; /* Center the image within the space */
+    }
+  }
+
+
+
+
+  /* Project Section */
+
+
+
+  .project-section {
+    margin: 20px;
+    display: flex;
+    background-color: lightyellow; /* Or any color that matches your design */
+    border-radius: 20px;
+    overflow: hidden; /* Ensures the border-radius clips the content */
+  }
+  
+  .project {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .project-description {
+    color: black; /* Choose text color that contrasts well with the background */
+    padding: 20px;
+    max-width: 50%; /* Adjust as needed */
+  }
+  
+
+  
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+  
