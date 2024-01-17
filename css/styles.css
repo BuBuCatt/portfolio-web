@@ -1,3 +1,15 @@
+/* font design */
+
+@font-face {
+  font-family: 'Rocher';
+  src: url(https://assets.codepen.io/9632/RocherColorGX.woff2);
+}
+
+
+
+
+
+
 /* Basic reset for styling */
 * {
     margin: 0;
@@ -201,11 +213,39 @@ main {
     font-size: 48px; /* Large text for 'Hello, I'm Justin' */
     margin-bottom: 0.3em; /* Spacing between 'Hello, I'm Justin' and 'UI/UX Designer' */
   }
+
+/* animation  typing for info part */
   
   aside p {
-    font-size: 24px; /* Smaller text for 'UI/UX Designer' */
+    font-size: 24px; 
     margin-bottom: 20px;
-    font-weight: bold; /* If you want the 'UI/UX Designer' text to be bold */
+    font-weight: bold; 
+  }
+
+  .info-container{
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;   
+  }
+
+  .typed {
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid;
+    width: 0;
+    animation: typing 1.5s steps(30, end) forwards, blinking 1s infinite;
+
+  }
+
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+
+
+  @keyframes blinking {
+    0% {border-right-color: transparent}
+    50% {border-right-color: black}
+    100% {border-right-color: transparent}
   }
 
 
@@ -292,8 +332,49 @@ main {
 
 
 
-  /* Project Section */
+  /* Project Section  CSS*/
 
+  /* project title */
+
+  .project-header{
+    border: 2px solid saddlebrown;
+    padding: 30px;
+  }
+
+
+  .project-header  h3{
+    font-family: Arial, Helvetica, sans-serif; /* Example font */
+    color: rgb(84, 84, 84);  
+    font-size: 2vw; /* Responsive font size */
+    font-weight: bold;
+    text-align: center; /* Center align */
+    margin: 10px 0; /* Spacing at top and bottom */
+    padding: 5px 0; /* Padding */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    
+}
+
+
+
+
+
+
+/* Adjustments for smaller screens */
+@media (max-width: 750px) {
+    .project-header h3 {
+        font-size: 5vw; /* Larger font size on small screens */
+    }
+}
+
+
+
+
+
+
+
+
+
+/* Gallery  CSS */
   .container{
     display: grid;
     grid-template-columns: repeat(6,1fr);
@@ -301,6 +382,7 @@ main {
     grid-gap: 10px;
 
     grid-auto-flow: dense;
+    padding: 10px;
 
   }
 
@@ -443,6 +525,57 @@ main {
     }
 
   }
+
+
+
+
+
+
+  /* Footer */
+
+
+  .social-footer {
+    background-color: rgb(84, 84, 84); /* Dark background */
+    color: #fff; /* White text color */
+    padding: 20px;
+    text-align: center; /* Center align items */
+    display: flex;
+    justify-content: space-between; /* Space out logo and icons */
+    align-items: center; /* Align items vertically */
+}
+
+.social-footer-icons ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 15px; /* Space between icons */
+}
+
+.social-footer-icons li a {
+    color: #fff; /* White icon color */
+    font-size: 24px; /* Icon size */
+    transition: color 0.3s; /* Smooth color transition on hover */
+}
+
+.social-footer-icons li a:hover {
+    color: #ddd; /* Lighter color on hover */
+}
+
+.logo {
+    max-width: 150px; /* Maximum logo width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* footer responsive */
+
+@media (max-width: 750px) {
+    .social-footer {
+        flex-direction: column; /* Stack items on smaller screens */
+        gap: 10px;
+    }
+}
+
+
 
 
 
