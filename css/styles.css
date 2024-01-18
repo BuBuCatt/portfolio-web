@@ -236,7 +236,15 @@ main {
     cursor: pointer; /* Cursor indicates a clickable element */
     transition: background-color 0.3s; /* Smooth transition for hover effect */
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    text-decoration: none;
   }
+
+  .btn-work{
+    text-decoration: none;
+    color: white;
+  }
+
+
   
   .btn:hover {
     background-color: #FFBE98; /* Darker background on hover */
