@@ -24,7 +24,7 @@ body {
     align-items: center;
     padding: 20px 30px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
-    border: 5px solid blue;
+    /* border: 5px solid blue; */
     
   }
   
@@ -33,7 +33,7 @@ body {
     font-size: 24px;
     font-weight: bold;
     color: rgb(84, 84, 84); 
-    border: 5px solid red;
+    /* border: 5px solid red; */
   }
 
   /* logo img */
@@ -50,7 +50,7 @@ body {
     width: min-content;
     display: flex;
     align-items: center;
-    border: 5px solid red;
+    /* border: 5px solid red; */
   }
 
   
