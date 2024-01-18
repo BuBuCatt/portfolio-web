@@ -18,7 +18,7 @@
     align-items: center;
     padding: 20px 30px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
-    border: 5px solid blue;
+    /* border: 5px solid blue; */
     
   }
   
@@ -27,7 +27,7 @@
     font-size: 24px;
     font-weight: bold;
     color: rgb(84, 84, 84); 
-    border: 5px solid red;
+    /* border: 5px solid red; */
   }
 
   /* logo img */
@@ -44,7 +44,7 @@
     width: min-content;
     display: flex;
     align-items: center;
-    border: 5px solid red;
+    /* border: 5px solid red; */
   }
 
   
@@ -84,6 +84,8 @@
   .header {
     flex-direction: column;
     padding: 10px;
+    align-items: center; 
+    
   }
 
   .logo {
@@ -96,19 +98,30 @@
   }
 
   nav {
+    
     width: 100%; /* Full width for nav container */
+    
   }
 
   .nav-menu {
+    display: flex;
     flex-direction: column; /* Stack menu items vertically */
-    align-items: center; /* Center menu items */
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    
+    
   }
 
   .nav-item {
+    width: 100%;
+    
     padding: 5px 0; /* Adjust padding for each nav item */
+  
   }
 
   .nav-link {
+    align-items: center; 
     font-size: 16px; /* Adjust font size for links */
   }
 }
@@ -131,7 +144,7 @@ main {
     justify-content:center;
     align-items: center;
     min-height: 100vh; /* Full height of the viewport */
-    border: 5px solid brown;
+    /* border: 5px solid brown; */
   }
 
 
@@ -144,7 +157,7 @@ main {
     color:rgb(84, 84, 84) ;
     text-align: left;
     margin: auto;
-    border: 5px solid green;
+    /* border: 5px solid green; */
     
   }
 
@@ -241,7 +254,7 @@ main {
   /* content containter */
 
   .content-wrapper {
-    border: 5px solid orange;
+    /* border: 5px solid orange; */
     display: flex;
     justify-content: space-between; /* Distributes space between the elements */
     align-items: center; /* Aligns items vertically */
@@ -252,9 +265,10 @@ main {
 
 
 .profile-container {
-    border: 5px solid purple;  
+    /* border: 5px solid purple;   */
     display: flex;
     justify-content: center;
+    padding: 30px;
 
 }
 
@@ -294,7 +308,7 @@ main {
   /* project title */
 
   .project-header{
-    border: 2px solid saddlebrown;
+    /* border: 2px solid saddlebrown; */
     padding: 30px;
   }
 
