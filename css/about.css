@@ -1,0 +1,234 @@
+/* Basic reset for styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fff;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  
+  /* Style for the header */
+  
+    /* header section background containter design */
+    .header {
+      background-color: rgb(252, 252, 252); 
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 30px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+      border: 5px solid blue;
+      
+    }
+    
+    /* Logo text styling */
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: rgb(84, 84, 84); 
+      border: 5px solid red;
+    }
+  
+    /* logo img */
+    .logo img{
+      height: 70px;
+      width: auto;
+      
+    }
+  
+  
+    /* nav container */
+    nav{
+      min-height: 70px;
+      width: min-content;
+      display: flex;
+      align-items: center;
+      border: 5px solid red;
+    }
+  
+    
+    /* Navigation menu */
+    .nav-menu {
+      list-style: none;
+      display: flex;
+      font-weight: bold;
+      font-family: Arial, Helvetica, sans-serif;
+      
+    }
+    
+    /* Style for each navigation item */
+    .nav-item {
+      padding: 0 15px;
+      width: 100%;
+      text-align: center;
+    }
+    
+    /* Style for navigation links */
+    .nav-link {
+      text-decoration: none;
+      color: rgb(84, 84, 84); 
+      font-size: 18px;
+      transition: color 0.3s ease;
+    }
+    
+    /* Hover effect for links */
+    .nav-link:hover {
+      color: #FFBE98; 
+      
+    }
+  
+  /* Responsive design for smaller screens */
+  @media screen and (max-width: 750px) {
+    .header {
+      flex-direction: column;
+      padding: 10px;
+    }
+  
+    .logo {
+      margin-bottom: 10px; /* Adds space between logo and nav menu */
+      font-size: 20px; /* Adjust logo text size */
+    }
+  
+    .logo img {
+      height: 50px; /* Adjust logo image size */
+    }
+  
+    nav {
+      width: 100%; /* Full width for nav container */
+    }
+  
+    .nav-menu {
+      flex-direction: column; /* Stack menu items vertically */
+      align-items: center; /* Center menu items */
+    }
+  
+    .nav-item {
+      padding: 5px 0; /* Adjust padding for each nav item */
+    }
+  
+    .nav-link {
+      font-size: 16px; /* Adjust font size for links */
+    }
+  }
+  
+
+  /* About Me contact Section */
+  .about-section {
+    text-align: center;
+    padding: 50px 20px;
+   
+    line-height: 1.6;
+    font-family: Arial, sans-serif;
+    color:rgb(54, 54, 54) ;
+
+}
+
+.profile-image {
+    background-color: #ddd; /* circle */
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.profile-image img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+h1{
+    font-size: 2.5em;
+    margin: 0 0 10px 0;
+}
+
+p{
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+    font-family: 'Farsan';
+    font-size: 25px;
+}
+
+
+  
+  
+  
+   
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+     /* Footer */
+  
+  
+     .social-footer {
+      flex-shrink: 0; 
+      background-color: rgb(84, 84, 84); /* Dark background */
+      color: #fff; /* White text color */
+      padding: 20px;
+      text-align: center; /* Center align items */
+      display: flex;
+      justify-content: space-between; /* Space out logo and icons */
+      align-items: center; /* Align items vertically */
+      border: 2px solid wheat;
+      margin-top: 10px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+  }
+  
+  .social-footer-icons ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      gap: 15px; /* Space between icons */
+  }
+  
+  .social-footer-icons li a {
+      color: #fff; /* White icon color */
+      font-size: 24px; /* Icon size */
+      transition: color 0.3s; /* Smooth color transition on hover */
+  }
+  
+  .social-footer-icons li a:hover {
+      color: #ddd; /* Lighter color on hover */
+  }
+  
+  .logo {
+      max-width: 150px; /* Maximum logo width */
+      height: auto; /* Maintain aspect ratio */
+  }
+  
+  /* footer responsive */
+  
+  @media (max-width: 750px) {
+      .social-footer {
+          flex-direction: column; /* Stack items on smaller screens */
+          gap: 10px;
+      }
+  }
+  
+  
+  
+  
+  
+  
+   
+  
+  
+  
