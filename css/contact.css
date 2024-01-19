@@ -164,6 +164,10 @@ body {
   border-radius: 5px;
 }
 
+.contact-form textarea{
+  overflow: auto;
+}
+
 .contact-form{
   padding: 10px;
   
@@ -230,6 +234,12 @@ body {
 .logo {
     max-width: 150px; /* Maximum logo width */
     height: auto; /* Maintain aspect ratio */
+}
+
+.copyright{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+
 }
 
 /* footer responsive */

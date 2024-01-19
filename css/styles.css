@@ -157,6 +157,7 @@ main {
     color:rgb(84, 84, 84) ;
     text-align: left;
     margin: auto;
+    overflow: auto;
     /* border: 5px solid green; */
     
   }
@@ -289,6 +290,7 @@ main {
     border-radius: 15px; /* Rounded corners for the image */
     max-width: 70%; /* Ensures image is responsive and doesn't overflow */
     height: 100%; /* Maintains aspect ratio */
+    float: right;
 }
 
 /* Update media query if needed */
