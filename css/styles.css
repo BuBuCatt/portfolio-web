@@ -665,6 +665,12 @@ main {
     height: auto; /* Maintain aspect ratio */
 }
 
+.copyright{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+
+}
+
 /* footer responsive */
 
 @media (max-width: 750px) {
