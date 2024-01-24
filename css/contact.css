@@ -173,7 +173,7 @@ body {
   
 }
 
-.contact-form button {
+.contactform-btn {
   background-color: rgb(84, 84, 84);
   color: #fff;
   border: none;
@@ -184,10 +184,28 @@ body {
   margin: 15px 30px;
 }
 
-.contact-form button:hover {
+
+.contactform-btn:hover {
   background-color: #FFBE98;
 }
 
+
+.contactform-btn::after{
+  content: 'In Processing!';
+  display: none;
+  color: darkgreen;
+  font-size: 15px;
+
+  
+}
+
+.contactform-btn:focus::after {
+  display: flex;
+}
+
+.contactform-btn {
+  position: relative;
+}
 
 
 
