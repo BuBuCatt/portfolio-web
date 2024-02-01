@@ -1,10 +1,8 @@
 // for the hamburger menu active 
-function toggleMenu() {
-  var nav = document.querySelector('.nav');
-  if (nav) {
-    nav.classList.toggle('active');
-  } else {
-    console.error('Navigation element not found!');
-  }
-}
 
+function toggleMenu() {
+  const menu = document.querySelector(".nav-menu");
+  const icon = document.querySelector(".hamburger-icon");
+  menu.classList.toggle("open");
+  icon.classList.toggle("open");
+}
