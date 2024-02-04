@@ -150,13 +150,13 @@
     display: none;
    }
 
-   /* stickey Header */
-   /* header.sticky{
+   /* ---- stickey Header ---- */
+   header.sticky {
     padding: 9px 6%;
     background: transparent;
     backdrop-filter: blur(55px);
     box-shadow: 0 0 10px var(--shadow-color);
-   } */
+   }
 
 
 
@@ -229,7 +229,7 @@
   } */
 
   /* stickey Header */
-  
+
 
 /* ====== Section ======== */
   section {
