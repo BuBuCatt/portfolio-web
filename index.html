@@ -6,8 +6,9 @@
 <link rel="icon" href="./assets/icons/cat-icon-head.png">
 <title>Kristen's Portfolio Website</title>
 
- <!-- Linking the external CSS file -->
+ <!-- Linking  CSS file -->
 <link rel="stylesheet" href="./css/styles.css">
+
 <!-- font awesome -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -19,6 +20,7 @@
 
 </head>
 
+            <!-- ====== website content starts ====== -->
 
 <!-- Here starts my website content -->
 
@@ -26,119 +28,102 @@
 <body>
 
 
- <!-- Header Part Starts -->
+    <!-- ====== Header Part Starts ====== -->
 
-<header class="header">
-    
-  <!-- Logo on the left side -->
-  <div class="logo">
-    <a href="/" >
-        <img    src="./assets/imgs/logo.png" alt="logo">
-
-    </a>
-    
-   </div>
-
-
-
-
-  <!-- Navigation menu on the right side -->
-<nav class="nav" id="desktop-nav">
-
-    <ul class="nav-menu">
-
-
-        <li class="nav-item"><a href="./index.html" class="nav-link">Home</a></li>
-        <li class="nav-item"><a href="./pages/about.html" class="nav-link">About</a></li>
-        <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
-        <li class="nav-item"><a href="./pages/contact.html" class="nav-link">Contact</a></li>
+    <header class="header">
         
-    </ul>
-    
-</nav>
+      <!-- Logo on the left side -->
+        <div class="logo">
+            <a href="#" >
+                <!-- <img    src="./assets/imgs/logo.png" alt="logo"> -->
+                Kristen<span>.</span>
+            </a>
+            
+        </div>
+        <!-- Navigation menu on the right side -->
+        <nav class="nav" >
+
+            <ul class="nav-menu">
 
 
-
-
-
-
-
-
-
-
-</header>
-<!-- Header Part Ends -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- content section  STARTS-->
-
-<main>
-
-
-    <section class="intro-section">
-
-        <div class="content-wrapper">
-
-            <!-- Right side of intro-->
-        
-                <aside >
-        
-                    <div class="greeting">
-                        <span>👋 Hello All</span>
-                    </div>
-        
-        
-                    <h1><span>I'm Kristen</span></h1>
-
-                    <div class="info-container">
-                        <p class="typed">A Web Developer</p>
-
-                    </div>
-                    
-        
-                    <div  class="button-container">
-        
-                        <button class="btn view-work"><a class="btn-work"   href="#projects">View My Work</a></button>
-                        <button class="btn download-cv">Download CV</button>
-                    
-        
-                    </div>
+                <li class="nav-item"><a href="./index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="./pages/about.html" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="./pages/contact.html" class="nav-link">Contact</a></li>
                 
-                </aside>
-        
-        
-                <!-- Profile picture on the right side -->
-                <div class="profile-container">
-                    <img class="profile-pic" src="./assets/imgs/me.png" alt="Kristen">
-                </div>
-        
-        
-        <!-- pic section done -->
-        
-        
+            </ul>
+
+            <div class="nav-button">
+                <i class="bx bx-moon change-theme" id="theme-button"></i>
+                <a href="#"><i class="bx bx-menu" id="menu-icon"></i></a>
+
             </div>
+            
+        </nav>
+
+        <div class="underline"></div>
+
+    </header>
+    <!-- ====== Header Part Ends ======= -->
+
+
+
+
+    <!--  ====== content  STARTS ======= -->
+
+    <!-- ---------------- Hero Section --------------- -->
+
+    <main>
+
+
+        <section class="intro-section" id="profile">
+
+            <div class="content-wrapper">
+
+                <!-- Right side of intro-->
+            
+                    <aside >
+            
+                        <div class="greeting">
+                            <span>👋 Hello All</span>
+                        </div>
+            
+            
+                        <h1><span>I'm Kristen</span></h1>
+
+                        <div class="info-container">
+                            <p class="typed">A Web Developer</p>
+
+                        </div>
+                        
+            
+                        <div  class="button-container">
+            
+                            <button class="btn"><a class="btn-work" href="#projects">View My Work</a></button>
+                            <button class="btn" onclick="window.open('assets/files/ChiaYuHsu_Resume_Feb.pdf')">Download CV</button>
+                        
+            
+                        </div>
+                    
+                    </aside>
+            
+            
+                    <!-- Profile picture on the right side -->
+                    <div class="profile-container">
+                        <img class="profile-pic" src="./assets/imgs/me.png" alt="Kristen">
+                    </div>
+            
+            
+            <!-- pic section done -->
+            
+            
+                </div>
+        </section>
 
 <!-- =================== Project Section STARTS ================== -->
-<section class="projects section" >
-        <!-- Header of Projects -->
+<!-- <section class="projects section" >
+        
         <div class="project-header" >
 
             <h2 class="project-title"  id="projects">
@@ -152,7 +137,7 @@
 
 
 
-</section>
+</section> -->
 
 <!-- ======= Project Section End ======= -->
 
@@ -165,7 +150,7 @@
 
 
     <!-- SKILL SECTION START -->
-    <div class="skills-section">
+    <!-- <div class="skills-section">
         <h2>Tech Stack</h2>
         <div class="skills-container">
             
@@ -175,11 +160,11 @@
             <div class="skill-item"><img src="./assets/imgs/icons8-nodejs-48.png" alt="node"></div>
             
         </div>
-    </div>
+    </div> -->
 
 
     <!-- CONTACT ME -->
-
+<!-- 
     <div class="contactme-container">
         <div class="contactme-content">
             <img src="./assets/imgs/cat.png" alt="contactme photo cat">
@@ -196,7 +181,7 @@
               
         </div>
 
-    </div>
+    </div> -->
 
     
 
@@ -213,39 +198,47 @@
 
 
 
-</main>
+    </main>
 
 
 
 
 
 
-<!-- footer -->
-<footer class="social-footer">
-    <div class="social-footer-left">
-      <a href="#"><img class="logo" src="./assets/imgs/logo.png"></a>
-    </div>
-    <div class="social-footer-icons">
-      <ul class="menu simple">
-        <li><a href="https://github.com/BuBuCatt"><i class="fa fa-github" aria-hidden="true"></i></a></li>
-        <li><a href="https://www.linkedin.com/in/chiayuh/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-        <li><a href="https://twitter.com/?lang=en"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-        <li><a href="#"><i class="fa fa-paw" aria-hidden="true"></i></a></li>
-      </ul>
-    </div>
+    <!-- footer -->
+    <footer class="social-footer">
+        <div class="social-footer-left">
+        <a href="#"><img class="logo" src="./assets/imgs/logo.png"></a>
+        </div>
+        <div class="social-footer-icons">
+        <ul class="menu simple">
+            <li><a href="https://github.com/BuBuCatt"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/chiayuh/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+            <li><a href="https://twitter.com/?lang=en"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-paw" aria-hidden="true"></i></a></li>
+        </ul>
+        </div>
 
 
-    <!-- inline css -->
-    <div>
-        <p class="copyright" style="color: azure;">copyright&copy; 2024 Kristen</p>
+        <!-- inline css -->
+        <div>
+            <p class="copyright" style="color: azure;">copyright&copy; 2024 Kristen</p>
 
-    </div>
+        </div>
 
-</footer>
+    </footer>
 
 
- <!-- Ling the external JS file -->
- <script src="./main.js"></script>
+
+
+
+
+
+
+
+    
+    <!-- Link the external JS file -->
+    <script src="./main.js"></script>
 
 </body>
 

@@ -1,5 +1,7 @@
 
-/* Basic reset for styling */
+/*============= Google Fonts ============*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
 /* ======= Basic Style ======== */
 * {
     margin: 0;
@@ -14,80 +16,151 @@
    
    
   }
-  
-  /* Style for the header */
 
-  /* header section background containter design */
+  :root {
+    --body-color: #fff;
+    --primary-color: rgb(84, 84, 84);
+    --secondary-color: #fff;
+    --secondary-2-color: #ccc;
+    --p-color: rgb(84, 84, 84);
+    --input-color: #fbfbfb;
+    --input-hover-color: #f0efef;
+    --shadow-color: rgba(0, 0, 0, 0.8);
+    --border-color: #353535;
+    --hover-color:#FFBE98;
+    --underline-color:rgb(252,252,252);
+  }
+
+  body{
+    background-color: var(--body-color);
+  }
+  p{
+    color: var(--p-color);
+  }
+  
+  /* ===== Style for the header ====== */
+
+ 
   .header {
-    background-color: rgb(252, 252, 252); 
+    /* background-color: rgb(252, 252, 252);  */
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    width: 100%;
+    background-color: transparent;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 30px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+    padding: 9px 6%;
+    transition: all 0.5s ease;
+    /* box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); */
    
     
   }
   
-  /* Logo text styling */
-  .logo {
-    font-size: 24px;
-    font-weight: bold;
-    color: rgb(84, 84, 84); 
+  /* --- Logo text styling --- */
+
+  .logo a{
+    font-size: 33px;
+    font-weight: 700;
+    color: var(--primary-color); 
     /* border: 5px solid red; */
   }
 
-  /* logo img */
-  .logo img{
-    height: 70px;
-    width: auto;
-    
+  .logo span{
+    color: var(--p-color);
   }
 
 
-  /* nav container */
+
+  /* logo img */
+  /* .logo img{
+    height: 70px;
+    width: auto;
+    
+  } */
+
+
+  /* --- Nav Bar ---*/
+
   nav{
-    min-height: 70px;
-    width: min-content;
+    
+   
     display: flex;
     align-items: center;
+    justify-content: center;
+    padding: 10px;
     /* border: 5px solid red; */
   }
 
   
   /* Navigation menu */
-  .nav-menu {
-    list-style: none;
-    display: flex;
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
+  .nav-menu li{
+    display: inline-block;
+    font-size: 17px;
+    font-weight: 400;
+    margin-right: 2rem;
+    
     
   }
   
-  /* Style for each navigation item */
-  .nav-item {
-    padding: 0 15px;
-    width: 100%;
-    text-align: center;
-  }
-  
+ 
   /* Style for navigation links */
   .nav-link {
     text-decoration: none;
-    color: rgb(84, 84, 84); 
+    color: var(--p-color); 
+    display: inline-block;
     font-size: 18px;
-    transition: color 0.3s ease;
+    transition: color 0.5s ;
+    padding: 10px;
   }
   
   /* Hover effect for links */
   .nav-link:hover {
-    color: #FFBE98; 
+    color: var(--hover-color); 
     
   }
 
+  /* nav button */
+  .nav-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    
+   }
+
+   /* underline  */
+   .underline{
+    position: fixed;
+    height: 3px;
+    background-color: var(--primary-color);
+    transition: width 0.2s, background-color 0.5s, transform 0.5s;
+    z-index: 1;
+    left: 0;
+   }
+  /* Menu Icon   */
+   #menu-icon{
+    color: var(--primary-color);
+    font-size: 30;
+    cursor: pointer;
+    z-index: 10001;
+    display: none;
+   }
+
+   /* stickey Header */
+   /* header.sticky{
+    padding: 9px 6%;
+    background: transparent;
+    backdrop-filter: blur(55px);
+    box-shadow: 0 0 10px var(--shadow-color);
+   } */
+
+
 
   /* Responsive design for smaller screens */
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
   .header {
     flex-direction: column;
     padding: 10px;
@@ -96,23 +169,23 @@
   }
 
   .logo {
-    margin-bottom: 10px; /* Adds space between logo and nav menu */
-    font-size: 20px; /* Adjust logo text size */
+    margin-bottom: 10px; 
+    font-size: 20px;
   }
 
   .logo img {
-    height: 50px; /* Adjust logo image size */
+    height: 50px; 
   }
 
   nav {
     
-    width: 100%; /* Full width for nav container */
+    width: 100%; 
     
   }
 
   .nav-menu {
     display: flex;
-    flex-direction: column; /* Stack menu items vertically */
+    flex-direction: column; 
     align-items: center;
     justify-content: center;
     width: 100%;
@@ -123,15 +196,15 @@
   .nav-item {
     width: 100%;
     
-    padding: 5px 0; /* Adjust padding for each nav item */
+    padding: 5px 0; 
   
   }
 
   .nav-link {
     align-items: center; 
-    font-size: 16px; /* Adjust font size for links */
+    font-size: 16px; 
   }
-}
+} */
 
 
 
@@ -140,33 +213,62 @@
 
 /* 
 
-Main Content
+**** Main Content *****
 
 */
 
 
 /* Styles for the main content */
-main {
+/* main {
     display: flex;
     justify-content:center;
     align-items: center;
-    min-height: 100vh; /* Full height of the viewport */
-    /* border: 5px solid brown; */
+    min-height: 100vh;  
+    
+  } */
+
+
+/* ====== Section ======== */
+  section {
+    padding-top: 15vh;
+    margin: 0 10rem;
+    min-height: fit-content;
   }
 
 
+  #profile {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 90vh;
+  }
 
+
+    /*---- content containter --- */
+
+    .content-wrapper {
+      border: 5px solid orange;
+      display: flex;
+      justify-content: space-between; 
+      align-items: center; 
+      gap: 50px;
+      width: 100%;  
+    }
+  
+
+
+  /* --- Description --- */
   aside {
-    margin-right: auto; /* Pushes the aside to the left of the centered content */
-    width: fit-content; /* Set the width of the aside */
+    margin-right: auto; 
+    width: fit-content; 
     margin-left: 10%;
-    font-family: Arial,  sans-serif;
     padding: 20px;
     color:rgb(84, 84, 84) ;
-    text-align: left;
+    text-align: center;
+    align-self: center;
     margin: auto;
     overflow: auto;
-    /* border: 5px solid green; */
+    border: 5px solid green;
     
   }
 
@@ -182,15 +284,14 @@ main {
     padding: 8px 16px;
     border-radius: 18px;
     font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     
   }
 
 
   aside h1 {
-    font-size: 48px; /* Large text for 'Hello, I'm Justin' */
-    margin-bottom: 0.3em; /* Spacing between 'Hello, I'm Justin' and 'UI/UX Designer' */
+    font-size: 48px; 
+    margin-bottom: 0.3em; 
   }
 
 /* animation  typing for info part */
@@ -198,13 +299,10 @@ main {
   aside p {
     font-size: 24px; 
     margin-bottom: 20px;
-    font-weight: bold; 
+    font-weight: 600; 
   }
 
-  .info-container{
-    display: inline-block;
-    font-family: Arial, Helvetica, sans-serif;   
-  }
+
 
   .typed {
     overflow: hidden;
@@ -214,7 +312,7 @@ main {
     animation: typing 1.5s steps(30, end) forwards, blinking 1s infinite;
 
   }
-
+/* typing animation  */
   @keyframes typing {
     from { width: 0 }
     to { width: 100% }
@@ -230,21 +328,28 @@ main {
 
 
 
-  /* button CSS */
+  /* --- button CSS ------ */
+
+
+  .button-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+
 
   .btn {
     display: inline-block;
-    background-color: rgb(84, 84, 84); /* Black background */
-    color: #fff; /* White text */
-    border: none; /* No border */
-    padding: 12px 24px; /* Top and bottom padding 10px, left and right padding 20px */
-    margin-right: 10px; /* Space between buttons */
-    font-size: 1em; /* Adjust size as needed */
-    font-weight: bold; /* Bold font */
-    border-radius: 15px; /* Rounded corners */
-    cursor: pointer; /* Cursor indicates a clickable element */
-    transition: background-color 0.3s; /* Smooth transition for hover effect */
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    background-color: rgb(84, 84, 84); 
+    color: #fff; 
+    border: none; 
+    padding: 12px 24px; 
+    font-size: 1em; 
+    font-weight: 600; 
+    border-radius: 2rem; 
+    cursor: pointer; 
+    transition: all 0.3s ease; 
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); 
     text-decoration: none;
   }
 
@@ -252,73 +357,72 @@ main {
     text-decoration: none;
     color: white;
   }
-
-
-  
+ 
   .btn:hover {
     background-color: #FFBE98; /* Darker background on hover */
   }
   
 
-  .button-container {
-    display: flex;
-    margin-left: -10px;
-    align-items: flex-start; /* Aligns items to the start of the container, i.e., left side */
-    /* Other styles */
-  }
-
-
-  /* content containter */
-
-  .content-wrapper {
-    /* border: 5px solid orange; */
-    display: flex;
-    justify-content: space-between; /* Distributes space between the elements */
-    align-items: center; /* Aligns items vertically */
-    gap: 50px;
-    height: 850px;
-    width: 100%;
-    
-  }
 
 
 
+
+/* ---- picture --- */
 .profile-container {
     /* border: 5px solid purple;   */
     display: flex;
     justify-content: center;
     padding: 30px;
+    margin: auto 0;
 
 }
 
 .profile-pic {
     
-    width: 80%;
-    border: 3px solid rgb(84, 84, 84); 
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
-    border-radius: 15px; /* Rounded corners for the image */
-    max-width: 70%; /* Ensures image is responsive and doesn't overflow */
-    height: 100%; /* Maintains aspect ratio */
+    width: 100%;
+    border: 5px solid rgb(84, 84, 84); 
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.6);
+    border-radius: 40px; 
+    max-width: 70%; 
+    height: 100%; 
     float: right;
 }
 
+
+
+
+
+
+
+
+
+
 /* Update media query if needed */
-@media screen and (max-width: 750px) {
+/* @media screen and (max-width: 750px) {
     .content-wrapper {
-      flex-direction: column; /* Stack the aside and image on smaller screens */
+      flex-direction: column; 
     }
   
     aside, .profile-container {
-      flex-basis: auto; /* Reset the flex-basis for mobile */
-      max-width: 100%; /* On smaller screens, each part takes full width */
+      flex-basis: auto; 
+      max-width: 100%; 
     }
   
-    /* Adjust the profile picture size for smaller screens if necessary */
+    
     .profile-pic {
-      width: 75%; /* For example, make the image slightly smaller on mobile */
-      margin: 0 auto; /* Center the image within the space */
+      width: 75%; 
+      margin: 0 auto; 
     }
-  }
+  } */
+
+
+
+
+
+
+
+
+
 
 
 
@@ -368,6 +472,21 @@ main {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ====== Skills section css ======== */
 
   /* Skills section */
   .skills-section {
