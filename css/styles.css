@@ -29,6 +29,7 @@
     --border-color: #353535;
     --hover-color:#FFBE98;
     --underline-color:rgb(252,252,252);
+    --shadow-pic:0px 10px 20px rgba(0, 0, 0, 0.6);
   }
 
   body{
@@ -227,6 +228,8 @@
     
   } */
 
+  /* stickey Header */
+  
 
 /* ====== Section ======== */
   section {
@@ -364,6 +367,35 @@
   
 
 
+/* ---- Social Media ---- */
+
+#socials-container{
+  display: flex;
+  justify-content: center;
+  font-size: 2.5rem;
+  margin-top: 1rem;
+  gap:10px;
+}
+/* icon part */
+
+.social-icon{
+  color: var(--primary-color);
+  border-radius: 50%;
+  padding: 5px;
+  font-size: 1.8rem;
+  cursor: pointer;
+
+}
+.social-icon:hover{
+  background: var(--secondary-2-color);
+  transition: all 0.3s ease;
+}
+ 
+
+
+
+
+
 
 
 
@@ -416,6 +448,62 @@
   } */
 
 
+/* ========== About Section ============ */
+
+#about-section{
+  position: relative;
+  margin-bottom: 3rem;
+}
+
+.section-text, .about-title{
+  text-align: center;
+
+}
+
+.about-title{
+  font-weight:700;
+  font-size: 35px;
+  margin-bottom: 2rem;
+}
+
+.text-container p{
+  font-size: 16px;
+  font-weight: 400;
+
+}
+
+.about-pic{
+  border-radius: 4.5rem;
+  box-shadow:var(--shadow-pic);
+  /* width: 100%; */
+
+ 
+
+}
+
+.section-container{
+  display: flex;
+  gap: 4rem;
+  height: 80%;
+}
+
+.about-details-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+
+}
+
+
+
+/* arrow */
+.arrow{
+  height: 2rem;
+  position: absolute;
+  right: -4rem;
+  bottom: -1.5rem;
+}
 
 
 
