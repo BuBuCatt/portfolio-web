@@ -30,6 +30,7 @@
     --hover-color:#FFBE98;
     --underline-color:rgb(252,252,252);
     --shadow-pic:0px 10px 20px rgba(0, 0, 0, 0.6);
+    --btn-color:#000;
   }
 
   body{
@@ -343,9 +344,6 @@
 
   .btn {
     display: inline-block;
-    background-color: rgb(84, 84, 84); 
-    color: #fff; 
-    border: none; 
     padding: 12px 24px; 
     font-size: 1em; 
     font-weight: 600; 
@@ -354,17 +352,30 @@
     transition: all 0.3s ease; 
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); 
     text-decoration: none;
+    border: 1px solid var(--border-color);
   }
 
-  .btn-work{
-    text-decoration: none;
-    color: white;
-  }
- 
-  .btn:hover {
-    background-color: #FFBE98; /* Darker background on hover */
+
+
+
+.btn-work{
+  text-decoration: none;
+  color: var(--border-color);
+}
+
+
+.btn:hover {
+    background-color: var(--border-color); 
+    color: var(--body-color);
   }
   
+  .btn a:hover {
+    
+    color: var(--body-color);
+  }
+
+
+
 
 
 /* ---- Social Media ---- */
@@ -506,36 +517,44 @@
 }
 
 
+ /* ====== Skills section css ======== */
 
+ #skills{
+  position: relative;
+ }
+ .skills-content{
+  display: flex;
+  justify-content: space-between;
+ }
 
+ .skills-text{
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+ }
 
+ .skills-title{
+  margin-bottom: 8rem;
+  font-size: 2.5rem;
+ }
 
+ .row-img{
+  width: 95%;
+  height: 240px;
+  cursor: pointer;
+  /* border: 3px solid; */
 
+ }
+.row-img img{
+  height: 50%;
+  display: block;
+  filter: brightness(80%);
+}
 
-
-
-
-  /* Project Section  CSS*/
-
-  /* project title */
-
-  .project-header{
-    /* border: 2px solid saddlebrown; */
-    padding: 30px;
-  }
-
-
-  .project-header  h2{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 2rem;
-    color: rgb(84, 84, 84);
-    margin-bottom: 20px;
-    font-weight: bold;
-    text-align: center; /* Center align */
-    margin: 10px 0; /* Spacing at top and bottom */
-    padding: 5px 0; /* Padding */
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Subtle shadow */
-    
+.row-img img:hover{
+  filter: brightness(90%);
+  transform: scale(1.2);
+  transition: all 0.3s ease;
 }
 
 
@@ -544,22 +563,60 @@
 
 
 /* Adjustments for smaller screens */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .project-header h3 {
-        font-size: 5vw; /* Larger font size on small screens */
+        font-size: 5vw; 
     }
+} */
+
+
+
+/* === project Section css === */
+#project{
+  position: relative;
+
+}
+.about-containers{
+  /* border: 5px solid rebeccapurple; */
+
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+
+}
+
+.details-container{
+  /* border: 5px solid red; */
+
+  padding: 1.5rem;
+  flex: 1;
+  background: #FFFAFA;
+  border-radius: 2rem;
+  text-align: center;
+  box-shadow: var(--shadow-pic);
+}
+
+.project-img{
+  border-radius: 2rem;
+  width: 90%;
+  height: 90%;
+  filter: brightness(80%);
+}
+
+.project-title{
+  margin: 1rem;
+  color:var(--primary-color) ;
 }
 
 
-
-/* === project content css === */
-
-
-
-
+.p-icon{
+  font-size: 1rem;
+  margin-left: 5px;
+}
 
 
-
+/* ===== Contact Section ====== */
 
 
 
@@ -574,10 +631,30 @@
 
 
 
-/* ====== Skills section css ======== */
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   /* Skills section */
-  .skills-section {
+  /* .skills-section {
     background-color: #f7f7f7;
     padding: 40px 0;
     text-align: center;
@@ -588,7 +665,7 @@
     font-size: 2rem;
     color: rgb(84, 84, 84);
     margin-bottom: 20px;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 .skills-container {
@@ -611,10 +688,10 @@
 .skill-item:hover {
     transform: translateY(-5px);
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
-}
+} */
 
 /* Responsive design for smaller screens */
-@media screen and (max-width: 750px) {
+/* @media screen and (max-width: 750px) {
     .skills-container {
         flex-direction: column;
         align-items: center;
@@ -623,10 +700,20 @@
     .skill-item:not(:first-child) {
         margin-top: 10px;
     }
-}
+} */
+
+
+
+
+
+
+
+
+
+
 
 /* ContactMe Section */
-.contactme-container{
+/* .contactme-container{
   text-align: center;
   padding: 50px 20px;
   line-height: 1.6;
@@ -635,7 +722,7 @@
 }
 
 .contactme-content{
-  background-color: #ddd; /* circle */
+  background-color: #ddd; 
   width: 250px;
   height: 250px;
   border-radius: 50%;
@@ -662,14 +749,14 @@
   font-size: 25px;
   font-family: Arial, Helvetica, sans-serif;
 
-}
+} */
 
-.button-link {
-  text-decoration: none; /* Removes underline from links */
-}
+/* .button-link {
+  text-decoration: none; 
+} */
 
-.button-link button {
-  /* Add your button styling here */
+/* .button-link button {
+
   padding: 15px 30px;
   background-color: rgb(84, 84, 84);
   color: white;
@@ -682,7 +769,7 @@
 
 .button-link button:hover {
   background-color: #FFBE98;
-}
+} */
 
 
 
