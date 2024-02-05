@@ -670,12 +670,14 @@ margin-bottom: 1.5rem;
   padding: 12px 24px; 
   background-color: var(--secondary-2-color);
   color: var(--border-color);
-  border: none;
+  border: 1px solid var(--btn-color);
   cursor: pointer;
   border-radius: 2rem;
   font-size: 1rem;
   transition: all 0.3s ease;
-  font-weight: bold;
+  font-weight: 600; 
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); 
+  /* font-weight: bold; */
   
 }
 
