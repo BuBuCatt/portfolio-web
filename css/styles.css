@@ -251,7 +251,7 @@
     /*---- content containter --- */
 
     .content-wrapper {
-      border: 5px solid orange;
+      /* border: 5px solid orange; */
       display: flex;
       justify-content: space-between; 
       align-items: center; 
@@ -272,7 +272,7 @@
     align-self: center;
     margin: auto;
     overflow: auto;
-    border: 5px solid green;
+    /* border: 5px solid green; */
     
   }
 

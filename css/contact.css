@@ -1,135 +1,162 @@
-/* Basic reset for styling */
+/*============= Google Fonts ============*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+/* ======= Basic Style ======== */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+   
+   
+  }
+
+  :root {
+    --body-color: #fff;
+    --primary-color: rgb(84, 84, 84);
+    --secondary-color: #fff;
+    --secondary-2-color: #ccc;
+    --p-color: rgb(84, 84, 84);
+    --input-color: #fbfbfb;
+    --input-hover-color: #f0efef;
+    --shadow-color: rgba(0, 0, 0, 0.8);
+    --border-color: #353535;
+    --hover-color:#FFBE98;
+    --underline-color:rgb(252,252,252);
+    --shadow-pic:0px 10px 20px rgba(0, 0, 0, 0.6);
+    --btn-color:#000;
+  }
+
+  body{
+    background-color: var(--body-color);
+  }
+  p{
+    color: var(--p-color);
+  }
+  
+  /* ===== Style for the header ====== */
+
  
-}
-
-body {
-  font-family: 'Arial', sans-serif;
-  background-color: #f7f5f0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-
-/* Style for the header */
-
-  /* header section background containter design */
   .header {
-    background-color: rgb(252, 252, 252); 
+    /* background-color: rgb(252, 252, 252);  */
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    width: 100%;
+    background-color: transparent;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 30px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
-    /* border: 5px solid blue; */
+    padding: 9px 6%;
+    transition: all 0.5s ease;
+    /* box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); */
+   
     
   }
   
-  /* Logo text styling */
-  .logo {
-    font-size: 24px;
-    font-weight: bold;
-    color: rgb(84, 84, 84); 
+  /* --- Logo text styling --- */
+
+  .logo a{
+    font-size: 33px;
+    font-weight: 700;
+    color: var(--primary-color); 
     /* border: 5px solid red; */
   }
 
-  /* logo img */
-  .logo img{
-    height: 70px;
-    width: auto;
-    
+  .logo span{
+    color: var(--p-color);
   }
 
 
-  /* nav container */
+
+  /* logo img */
+  /* .logo img{
+    height: 70px;
+    width: auto;
+    
+  } */
+
+
+  /* --- Nav Bar ---*/
+
   nav{
-    min-height: 70px;
-    width: min-content;
+    
+   
     display: flex;
     align-items: center;
+    justify-content: center;
+    padding: 10px;
     /* border: 5px solid red; */
   }
 
   
   /* Navigation menu */
-  .nav-menu {
-    list-style: none;
-    display: flex;
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
+  .nav-menu li{
+    display: inline-block;
+    font-size: 17px;
+    font-weight: 400;
+    margin-right: 2rem;
+    
     
   }
   
-  /* Style for each navigation item */
-  .nav-item {
-    padding: 0 15px;
-    width: 100%;
-    text-align: center;
-  }
-  
+ 
   /* Style for navigation links */
   .nav-link {
     text-decoration: none;
-    color: rgb(84, 84, 84); 
+    color: var(--p-color); 
+    display: inline-block;
     font-size: 18px;
-    transition: color 0.3s ease;
+    transition: color 0.5s ;
+    padding: 10px;
   }
   
   /* Hover effect for links */
   .nav-link:hover {
-    color: #FFBE98; 
+    color: var(--hover-color); 
     
   }
 
-  /* Responsive design for smaller screens */
-  @media screen and (max-width: 768px) {
-    .header {
-      flex-direction: column;
-      padding: 10px;
-      align-items: center; 
-      
-    }
-  
-    .logo {
-      margin-bottom: 10px; /* Adds space between logo and nav menu */
-      font-size: 20px; /* Adjust logo text size */
-    }
-  
-    .logo img {
-      height: 50px; /* Adjust logo image size */
-    }
-  
-    nav {
-      
-      width: 100%; /* Full width for nav container */
-      
-    }
-  
-    .nav-menu {
-      display: flex;
-      flex-direction: column; /* Stack menu items vertically */
-      align-items: center;
-      justify-content: center;
-      width: 100%;
-      
-      
-    }
-  
-    .nav-item {
-      width: 100%;
-      
-      padding: 5px 0; /* Adjust padding for each nav item */
+  /* nav button */
+  .nav-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
     
-    }
-  
-    .nav-link {
-      align-items: center; 
-      font-size: 16px; /* Adjust font size for links */
-    }
-  }
+   }
+
+   /* underline  */
+   .underline{
+    position: fixed;
+    height: 3px;
+    background-color: var(--primary-color);
+    transition: width 0.2s, background-color 0.5s, transform 0.5s;
+    z-index: 1;
+    left: 0;
+   }
+  /* Menu Icon   */
+   #menu-icon{
+    color: var(--primary-color);
+    font-size: 30;
+    cursor: pointer;
+    z-index: 10001;
+    display: none;
+   }
+
+   /* ---- stickey Header ---- */
+   header.sticky {
+    padding: 9px 6%;
+    background: transparent;
+    backdrop-filter: blur(55px);
+    box-shadow: 0 0 10px var(--shadow-color);
+   }
 
 
 
