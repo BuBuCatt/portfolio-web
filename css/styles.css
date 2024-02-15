@@ -143,9 +143,11 @@
     left: 0;
    }
   /* Menu Icon   */
+  /* hamburger icon */
    #menu-icon{
     color: var(--primary-color);
-    font-size: 30;
+    width: 24px;
+    height: auto;
     cursor: pointer;
     z-index: 10001;
     display: none;
@@ -435,28 +437,72 @@
 
 
 
+@media screen and (max-width: 768px) {
+  /* Adjust section padding and margins */
+  section {
+    margin: 0 1rem; /* Reduce margin for smaller screens */
+    padding-top: 10vh;
+  }
+
+  /* Stack profile sections vertically */
+  #profile {
+    flex-direction: column;
+    gap: 2rem; /* Reduce gap for smaller screens */
+    height: auto; /* Let the height adjust to content */
+  }
+
+  /* Adjust content wrapper */
+  .content-wrapper {
+    flex-direction: column; /* Stack elements vertically */
+    gap: 20px; /* Adjust gap between elements */
+    padding: 0 1rem; /* Add padding on the sides */
+  }
+
+  /* Description adjustments */
+  aside {
+    margin: 0; /* Remove specific left and right margins */
+    width: 100%; /* Allow it to take full width */
+    padding: 1rem; /* Adjust padding */
+  }
+
+  /* Adjust font sizes for smaller screens */
+  aside h1 {
+    font-size: 36px; /* Smaller font size for h1 */
+  }
+
+  aside p {
+    font-size: 18px; /* Adjust paragraph font size */
+  }
+
+  /* Button container */
+  .button-container {
+    flex-direction: column; /* Stack buttons vertically */
+    gap: 10px; /* Reduce gap */
+  }
+
+  /* Social Icons */
+  #socials-container {
+    flex-wrap: wrap; /* Allow icons to wrap */
+    font-size: 2rem; /* Reduce font size for icons */
+  }
+
+  /* Profile picture adjustments */
+  .profile-container {
+    justify-content: center;
+    padding: 20px; /* Adjust padding */
+  }
+
+  .profile-pic {
+    max-width: 90%; /* Allow image to be more responsive */
+    height: auto; /* Adjust height automatically */
+  }
+}
 
 
 
 
 
-/* Update media query if needed */
-/* @media screen and (max-width: 750px) {
-    .content-wrapper {
-      flex-direction: column; 
-    }
-  
-    aside, .profile-container {
-      flex-basis: auto; 
-      max-width: 100%; 
-    }
-  
-    
-    .profile-pic {
-      width: 75%; 
-      margin: 0 auto; 
-    }
-  } */
+
 
 
 /* ========== About Section ============ */
@@ -517,6 +563,49 @@
 }
 
 
+
+
+
+@media screen and (max-width: 768px) {
+  /* Adjust the about section's margin */
+  #about-section {
+      margin-bottom: 2rem;
+  }
+
+  /* Center text and reduce font size for smaller screens */
+  .about-title {
+      font-size: 28px; /* Smaller font size for the title */
+      margin-bottom: 1.5rem;
+  }
+
+  /* Adjust paragraph text size within the text container */
+  .text-container p {
+      font-size: 14px; /* Smaller font size for paragraphs */
+  }
+
+  /* Adjust the about picture for smaller screens */
+  .about-pic {
+      max-width: 100%; /* Make sure the picture is not wider than the screen */
+      height: auto; /* Maintain aspect ratio */
+      margin: 0 auto; /* Center the image */
+  }
+
+  /* Adjust the layout of the section container to stack its children */
+  .section-container {
+      flex-direction: column; /* Stack the flex items vertically */
+      gap: 2rem; /* Reduce the gap for a tighter layout */
+      height: auto; /* Let the height adjust based on content */
+  }
+
+  /* Center the details container and adjust alignment */
+  .about-details-container {
+      flex-direction: column; /* Stack details vertically */
+      align-items: center; /* Align items in the center */
+  }
+}
+
+
+
  /* ====== Skills section css ======== */
 
  #skills{
@@ -562,12 +651,49 @@
 
 
 
-/* Adjustments for smaller screens */
-/* @media (max-width: 768px) {
-    .project-header h3 {
-        font-size: 5vw; 
-    }
-} */
+@media screen and (max-width: 768px) {
+
+  /* Adjust the skills section layout */
+  .skills-content {
+      flex-direction: column; /* Stack skill items vertically */
+      align-items: center; /* Center-align the skill items */
+  }
+
+  /* Reduce the bottom margin of the skills title for smaller screens */
+  .skills-title {
+      margin-bottom: 4rem; /* Less space below the title */
+      font-size: 24px; /* Smaller font size for the title */
+  }
+
+  /* Adjust the skills text for better readability on small screens */
+  .skills-text {
+      font-size: 14px; /* Smaller font size for the text */
+  }
+
+  /* Adjust the presentation of skill images */
+  .row-img {
+      width: 100%; /* Adjust width to fit smaller screens */
+      height: auto; /* Adjust height automatically */
+      margin-bottom: 25px; /* Add some space between rows */
+      position: relative;
+      left: 30%;
+
+
+
+  }
+
+  .row-img img {
+      width: 40%;
+      height: 40%; /* Maintain aspect ratio */
+  }
+
+  /* Enhance the hover effect for better visibility on touch devices */
+  .row-img img:hover {
+      filter: brightness(100%); /* Slightly increase brightness on hover */
+      transform: none; /* Disable scaling on hover for better touch interaction */
+  }
+}
+
 
 
 
@@ -613,6 +739,41 @@
 .p-icon{
   font-size: 1rem;
   margin-left: 5px;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+  /* Adjust the overall project section layout for smaller screens */
+  .about-containers {
+      flex-direction: column; /* Stack project containers vertically */
+      gap: 1rem; /* Reduce the gap for a tighter layout */
+      margin-bottom: 1rem;
+      margin-top: 1rem;
+  }
+
+  .details-container {
+      padding: 1rem; /* Adjust padding for smaller screens */
+      flex: none; /* Override any specific flex settings for consistent behavior */
+      width: 100%; /* Allow the details container to fill the available width */
+      margin-bottom: 20px; /* Add some space between project detail containers */
+  }
+
+  .project-img {
+      width: 100%; /* Adjust the project image to take the full width of its container */
+      height: auto; /* Adjust the height automatically based on the width to maintain aspect ratio */
+      margin-bottom: 10px; /* Provide some space below the image */
+  }
+
+  .project-title {
+      font-size: 20px; /* Optionally adjust the project title font size for better readability */
+      margin: 0.5rem 0; /* Adjust title margin */
+  }
+
+  .p-icon {
+      font-size: 0.9rem; /* Adjust icon size if necessary */
+  }
 }
 
 
@@ -808,11 +969,14 @@ margin-bottom: 1.5rem;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
 }
 
+
 .social-footer-icons ul {
     list-style: none;
     padding: 0;
     display: flex;
-    gap: 15px; /* Space between icons */
+    gap: 15px; 
+
+
 }
 
 .social-footer-icons li a {
@@ -822,17 +986,16 @@ margin-bottom: 1.5rem;
 }
 
 .social-footer-icons li a:hover {
-    color: #ddd; /* Lighter color on hover */
+    color: #FFBE98; 
 }
 
-.logo {
-    max-width: 150px; /* Maximum logo width */
-    height: auto; /* Maintain aspect ratio */
-}
+
+
 
 .copyright{
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, sans-serif;
   font-size: 15px;
+  font-weight: bold;
 
 }
 
