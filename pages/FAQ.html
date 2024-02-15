@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Your Name</title>
+    <link rel="stylesheet" href="../css/FAQ.css">
+</head>
+<body>
+
+<div class="faq-container">
+    <h1>Frequently Asked Questions</h1>
+    
+    <!-- FAQ 1 -->
+    <div class="faq">
+        <div class="question">
+            <h3>What inspired you to start your personal website?</h3>
+        </div>
+        <div class="answer">
+            <p>This website is a platform to share my portfolio, experiences, and the journey in my field of work. It serves as a central point of contact for potential collaborators and employers.</p>
+        </div>
+    </div>
+
+    <!-- FAQ 2 -->
+    <div class="faq">
+        <div class="question">
+            <h3>What topics do you generally write about in your blog?</h3>
+        </div>
+        <div class="answer">
+            <p>I write about a range of topics including web development, design trends, personal growth, and occasionally my travel experiences.</p>
+        </div>
+    </div>
+
+    <!-- FAQ 3 -->
+    <div class="faq">
+        <div class="question">
+            <h3>How can I contact you for collaboration or hiring?</h3>
+        </div>
+        <div class="answer">
+            <p>The best way to reach out is through the contact form on my website. I'm open to discussing new projects, freelance opportunities, or full-time roles.</p>
+        </div>
+    </div>
+
+    <!-- Add more FAQs as needed -->
+</div>
+
+<script>
+// JavaScript for toggling the FAQ answers
+document.addEventListener('DOMContentLoaded', () => {
+    const questions = document.querySelectorAll('.question');
+
+    questions.forEach(question => {
+        question.addEventListener('click', () => {
+            const answer = question.nextElementSibling;
+            answer.classList.toggle('active');
+        });
+    });
+});
+</script>
+
+</body>
+</html>
+

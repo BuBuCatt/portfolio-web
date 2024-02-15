@@ -1,0 +1,48 @@
+/* styles.css for a personal website */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+}
+
+.faq-container {
+    width: 75%;
+    margin: 2rem auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.faq h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.faq .question h3 {
+    background-color: #5D5C61;
+    color: #fff;
+    padding: 10px;
+    margin: 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.faq .question h3:hover {
+    background-color: #379683;
+}
+
+.faq .answer {
+    border: 1px solid #5D5C61;
+    border-top: none;
+    padding: 20px;
+    display: none; /* Hidden by default */
+}
+
+/* Toggle 'active' class for displaying answers */
+.faq .answer.active {
+    display: block;
+}
