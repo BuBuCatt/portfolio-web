@@ -17,6 +17,11 @@
    
   }
 
+  html{
+    scroll-behavior:smooth;
+  }
+
+
   :root {
     --body-color: #fff;
     --primary-color: rgb(84, 84, 84);
@@ -438,63 +443,83 @@
 
 
 @media screen and (max-width: 768px) {
+
   /* Adjust section padding and margins */
   section {
-    margin: 0 1rem; /* Reduce margin for smaller screens */
+    margin: 0 1rem; 
     padding-top: 10vh;
   }
 
   /* Stack profile sections vertically */
   #profile {
     flex-direction: column;
-    gap: 2rem; /* Reduce gap for smaller screens */
-    height: auto; /* Let the height adjust to content */
+    gap: 2rem; 
+    height: auto; 
   }
 
   /* Adjust content wrapper */
   .content-wrapper {
-    flex-direction: column; /* Stack elements vertically */
-    gap: 20px; /* Adjust gap between elements */
-    padding: 0 1rem; /* Add padding on the sides */
+    flex-direction: column;
+    gap: 20px; 
+    padding: 0 1rem; 
   }
 
   /* Description adjustments */
   aside {
-    margin: 0; /* Remove specific left and right margins */
-    width: 100%; /* Allow it to take full width */
-    padding: 1rem; /* Adjust padding */
+    margin: 0; 
+    width: 100%; 
+    padding: 1rem; 
   }
+
+
 
   /* Adjust font sizes for smaller screens */
   aside h1 {
-    font-size: 36px; /* Smaller font size for h1 */
+    font-size: 36px;
   }
 
   aside p {
-    font-size: 18px; /* Adjust paragraph font size */
+    font-size: 18px; 
   }
+
 
   /* Button container */
   .button-container {
-    flex-direction: column; /* Stack buttons vertically */
-    gap: 10px; /* Reduce gap */
+    flex-direction: column; 
+    gap: 15px; 
+    width: 50%;
+    
+
+  }
+
+  .button-container button{
+    
+    display: inline-block;
+    padding: 10px 20px;
+    position: relative;
+    left:50%;
+    border-radius: 5rem; 
+    cursor: pointer; 
+    transition: all 0.3s ease; 
+ 
   }
 
   /* Social Icons */
   #socials-container {
-    flex-wrap: wrap; /* Allow icons to wrap */
-    font-size: 2rem; /* Reduce font size for icons */
+    flex-wrap: wrap; 
+    font-size: 2rem;
   }
 
   /* Profile picture adjustments */
   .profile-container {
     justify-content: center;
-    padding: 20px; /* Adjust padding */
+    padding: 20px; 
   }
 
   .profile-pic {
-    max-width: 90%; /* Allow image to be more responsive */
-    height: auto; /* Adjust height automatically */
+    max-width: 90%; 
+    height: auto; 
+
   }
 }
 
@@ -574,33 +599,35 @@
 
   /* Center text and reduce font size for smaller screens */
   .about-title {
-      font-size: 28px; /* Smaller font size for the title */
+      font-size: 28px; 
       margin-bottom: 1.5rem;
   }
 
   /* Adjust paragraph text size within the text container */
   .text-container p {
-      font-size: 14px; /* Smaller font size for paragraphs */
+      font-size: 14px; 
+      text-align: center;
   }
 
   /* Adjust the about picture for smaller screens */
   .about-pic {
-      max-width: 100%; /* Make sure the picture is not wider than the screen */
-      height: auto; /* Maintain aspect ratio */
-      margin: 0 auto; /* Center the image */
+      max-width: 100%; 
+      height: auto; 
+      margin: 0 auto; 
+      display: flex;
   }
 
   /* Adjust the layout of the section container to stack its children */
   .section-container {
-      flex-direction: column; /* Stack the flex items vertically */
-      gap: 2rem; /* Reduce the gap for a tighter layout */
-      height: auto; /* Let the height adjust based on content */
+      flex-direction: column; 
+      gap: 3rem; 
+      height: fit-content; 
   }
 
   /* Center the details container and adjust alignment */
   .about-details-container {
-      flex-direction: column; /* Stack details vertically */
-      align-items: center; /* Align items in the center */
+      flex-direction: column; 
+      align-items: center; 
   }
 }
 
@@ -655,26 +682,26 @@
 
   /* Adjust the skills section layout */
   .skills-content {
-      flex-direction: column; /* Stack skill items vertically */
-      align-items: center; /* Center-align the skill items */
+      flex-direction: column; 
+      align-items: center; 
   }
 
   /* Reduce the bottom margin of the skills title for smaller screens */
   .skills-title {
-      margin-bottom: 4rem; /* Less space below the title */
-      font-size: 24px; /* Smaller font size for the title */
+      margin-bottom: 3rem; 
+      font-size: 24px; 
   }
 
   /* Adjust the skills text for better readability on small screens */
   .skills-text {
-      font-size: 14px; /* Smaller font size for the text */
+      font-size: 14px; 
   }
 
   /* Adjust the presentation of skill images */
   .row-img {
-      width: 100%; /* Adjust width to fit smaller screens */
-      height: auto; /* Adjust height automatically */
-      margin-bottom: 25px; /* Add some space between rows */
+      width: 100%; 
+      height: auto; 
+      margin-bottom: 25px; 
       position: relative;
       left: 30%;
 
@@ -684,14 +711,14 @@
 
   .row-img img {
       width: 40%;
-      height: 40%; /* Maintain aspect ratio */
+      height: 40%; 
   }
 
   /* Enhance the hover effect for better visibility on touch devices */
   .row-img img:hover {
-      filter: brightness(100%); /* Slightly increase brightness on hover */
-      transform: none; /* Disable scaling on hover for better touch interaction */
-  }
+      filter: brightness(100%); 
+      transform: none; 
+}
 }
 
 
@@ -703,7 +730,7 @@
 
 }
 .about-containers{
-  /* border: 5px solid rebeccapurple; */
+ 
 
   display: flex;
   gap: 2rem;
@@ -713,7 +740,7 @@
 }
 
 .details-container{
-  /* border: 5px solid red; */
+
 
   padding: 1.5rem;
   flex: 1;
@@ -747,15 +774,15 @@
 @media screen and (max-width: 768px) {
   /* Adjust the overall project section layout for smaller screens */
   .about-containers {
-      flex-direction: column; /* Stack project containers vertically */
-      gap: 1rem; /* Reduce the gap for a tighter layout */
+      flex-direction: column; 
+      gap: 1rem; 
       margin-bottom: 1rem;
       margin-top: 1rem;
   }
 
   .details-container {
-      padding: 1rem; /* Adjust padding for smaller screens */
-      flex: none; /* Override any specific flex settings for consistent behavior */
+      padding: 1rem; 
+      flex: none; 
       width: 100%; /* Allow the details container to fill the available width */
       margin-bottom: 20px; /* Add some space between project detail containers */
   }
@@ -838,7 +865,7 @@ margin-bottom: 1.5rem;
   transition: all 0.3s ease;
   font-weight: 600; 
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); 
-  /* font-weight: bold; */
+ 
   
 }
 
@@ -846,104 +873,6 @@ margin-bottom: 1.5rem;
   background-color: var(--border-color); 
   color: var(--body-color);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  /* Skills section */
-  /* .skills-section {
-    background-color: #f7f7f7;
-    padding: 40px 0;
-    text-align: center;
-    
-}
-
-.skills-section h2 {
-    font-size: 2rem;
-    color: rgb(84, 84, 84);
-    margin-bottom: 20px;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-}
-
-.skills-container {
-  
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px; 
-}
-
-.skill-item {
-    background-color: #ebebebca;
-    padding: 10px 20px;
-    font-size: 1rem;
-    border-radius: 5px;
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
-    transition: transform 0.2s ease-in-out;
-}
-
-.skill-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
-} */
-
-/* Responsive design for smaller screens */
-/* @media screen and (max-width: 750px) {
-    .skills-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .skill-item:not(:first-child) {
-        margin-top: 10px;
-    }
-} */
-
-
-
-
-
-
-
-
-
-
-
-/* ContactMe Section */
-
-
 
 
 
