@@ -144,7 +144,7 @@
   /* Menu Icon   */
    #menu-icon{
     color: var(--primary-color);
-    font-size: 30;
+    font-size: 30px;
     cursor: pointer;
     z-index: 10001;
     display: none;
