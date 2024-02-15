@@ -49,7 +49,7 @@
 
  
   .header {
-    /* background-color: rgb(252, 252, 252);  */
+
     position: fixed;
     top: 0;
     right: 0;
@@ -170,12 +170,16 @@
 
   /* Responsive design for smaller screens */
 
+ 
+
+
+
   @media screen and (max-width: 768px) {
     .nav-menu {
-        display: none; /* Hidden by default on small screens */
+        display: none; 
     }
     .nav-menu.active {
-        display: block; /* Visible when 'active' class is added */
+        display: block; 
     }
 }
 
@@ -191,14 +195,7 @@
 */
 
 
-/* Styles for the main content */
-/* main {
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    min-height: 100vh;  
-    
-  } */
+
 
   /* stickey Header */
 
@@ -639,6 +636,27 @@
 }
 
 
+/* Selector chaining for a more specific targeting */
+.skills-content .row-img.skills-text img {
+
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.skills-content .row-img.skills-text img:hover {
+  
+  opacity: 1;
+  transform: scale(1.1);
+}
+.skills-text,
+.skills-title,
+.nav-link {
+    text-align: center;
+    font-size: 16px;
+}
+
+
+
 
 
 
@@ -678,6 +696,12 @@
       width: 40%;
       height: 40%; 
   }
+
+  .skills-content .row-img img {
+    
+    transition: all 0.3s ease;
+  }
+  
 
   /* Enhance the hover effect for better visibility on touch devices */
   .row-img img:hover {
