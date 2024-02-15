@@ -40,3 +40,16 @@ menuIcon.addEventListener('click', function(event) {
   event.preventDefault(); // Prevents the link action
   toggleNavMenu(); // Toggles the 'active' class on or off
 });
+
+
+
+
+
+document.querySelector('.arrow').addEventListener('click', function() {
+  window.scrollBy({
+      top: 500, // Adjust the value to scroll down by the desired amount of pixels
+      left: 0,
+      behavior: 'smooth'
+  });
+});
+
