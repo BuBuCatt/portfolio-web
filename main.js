@@ -30,3 +30,13 @@ window.addEventListener("scroll", function(){
 
 
 
+function toggleNavMenu() {
+  var navMenu = document.querySelector('.nav-menu');
+  navMenu.classList.toggle('active');
+}
+
+var menuIcon = document.querySelector('.menu-toggle');
+menuIcon.addEventListener('click', function(event) {
+  event.preventDefault(); // Prevents the link action
+  toggleNavMenu(); // Toggles the 'active' class on or off
+});
