@@ -30,23 +30,3 @@ window.addEventListener("scroll", function(){
 
 
 
-// Wait for the DOM to fully load
-document.addEventListener('DOMContentLoaded', function() {
-  // Select the menu icon
-  const menuIcon = document.getElementById('menu-icon');
-
-  // Select the navigation menu
-  const navMenu = document.querySelector('.nav-menu');
-
-  // Listen for a click event on the menu icon
-  menuIcon.addEventListener('click', function() {
-      // Check if the nav menu is currently displayed
-      if (navMenu.style.display === 'block') {
-          // If it is, hide it
-          navMenu.style.display = 'none';
-      } else {
-          // Otherwise, show it
-          navMenu.style.display = 'block';
-      }
-  });
-});
